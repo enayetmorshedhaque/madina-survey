@@ -25,7 +25,12 @@
   /* Font Size */
   --primary-font: 1.5rem;
   --secondary-font: 1.25rem;
-  --logo-font: 2.5rem;
+  --secondary-font-tablet: 1.2rem;
+  --secondary-font-mobile: 1.25rem;
+  --hero-primary-font: 4.5rem;
+  --hero-primary-font-tablet: 4rem;
+  --hero-primary-font-mobile: 2.5rem;
+  --hero-secondary-font: 2rem;
   --social-link-font: 1.75rem;
 }
 
@@ -42,12 +47,29 @@ body {
   flex-direction: column;
 }
 
+.hero-heading {
+  font-size: var(--hero-primary-font);
+  color: var(--white-color);
+}
+
 .hero-image {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100vh;
   background-color: var(--footer-color);
+}
+
+.hero-image > .description,
+.hero-image > .fade-in {
+  margin-top: 2.5rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  width: 35%; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
 }
 
 .about-us-text br {
@@ -104,12 +126,18 @@ a {
 
 .logo-slide {
   display: inline-block;
-  animation: slide 20s linear infinite; /* Adjust the duration as needed */
+  animation: slide 30s linear infinite; /* Adjust the duration as needed */
 }
 
-.logo {
+.client-logo {
   height: auto;
   margin-right: 30px; /* Adjust the spacing between logos as needed */
+}
+
+#surveys img {
+  height: 200px !important;
+  width: 100%;
+  padding: 0;
 }
 
 @keyframes slide {
@@ -148,6 +176,77 @@ footer {
 
 .social-link-font {
   font-size: var(--social-link-font);
+}
+
+@media screen and (max-width: 425px) {
+  #hero-image-content {
+    display: grid !important;
+    justify-items: center;
+    align-content: space-evenly;
+  }
+
+  .fade-in {
+    order: -1;
+    width: 70%;
+  }
+
+  h1.section-heading {
+    text-align: center;
+  }
+
+  h5.section-heading {
+    text-align: left;
+  }
+
+  .hero-heading {
+    font-size: var(--hero-primary-font-mobile);
+  }
+
+  footer {
+    height: 710px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.375rem + 1vw);
+  }
+
+  .secondary-text {
+    font-size: var(--secondary-font-tablet) !important;
+  }
+
+  #hero-image-content {
+    display: grid !important;
+    justify-items: center;
+  }
+
+  .fade-in {
+    order: -1;
+    width: 45%;
+  }
+
+  .hero-heading {
+    font-size: var(--hero-primary-font-tablet);
+    text-align: center;
+  }
+
+  .director-img {
+    width: 110% !important;
+    height: 350px !important;
+  }
+
+  textarea {
+    height: 165px !important;
+  }
+
+  .footer-logo > img {
+    width: 250px !important;
+  }
+
+  footer .w-75 {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {
