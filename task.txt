@@ -1,0 +1,8 @@
+1. Logo
+2. Font
+3. Color palette for finance theme
+4. client slider
+5. testimonial card
+6. copyright single line, thin, enayet bold
+7. footer alignment
+8. 
