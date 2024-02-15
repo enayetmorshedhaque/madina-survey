@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Madina Survey | Services</title>
+    <title>Madina Survey | Service List</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -39,7 +39,7 @@
               href="#"
               role="button"
             >
-              <i class="fas fa-search"></i>
+              <i class="fas fa-sign-out-alt"></i>
             </a>
             <div class="navbar-search-block">
               <form class="form-inline">
@@ -120,7 +120,7 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-cogs"></i>
+                  <i class="nav-icon fas fa-building"></i>
                   <p>
                     Company Profile
                     <i class="right fas fa-angle-left"></i>
@@ -147,11 +147,123 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href="../admin/services.html" class="nav-link active">
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>Services</p>
+                  <p>
+                    Services
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
                 </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../admin/services.html" class="nav-link active">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Service List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../admin/add-new-service.html" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Add New Service</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-users"></i>
+                  <p>
+                    Customers
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../admin/customers.html" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Customer List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../admin/add-new-customer.html" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Add New Customer</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-comments"></i>
+                  <p>
+                    Testimonials
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../admin/testimonials.html" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Testimonial List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="../admin/add-new-testimonial.html"
+                      class="nav-link"
+                    >
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Add New Testimonial</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-blog"></i>
+                  <p>
+                    Blogs
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../admin/blogs.html" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Blog List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../admin/add-new-blog.html" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Add New Blog</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-cogs"></i>
+                  <p>
+                    Company Settings
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="../admin/social-sites.html" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Social Media</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../admin/company-profile.html" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Company Profile</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
@@ -184,73 +296,11 @@
 
         <!-- Main content -->
         <section class="content">
-          <div class="container mb-3">
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-md-6">
-                <div class="card card-default">
-                  <div class="card-header shadow-sm">
-                    <h3 class="card-title font-weight-bold">Add New Service</h3>
-                  </div>
-                  <!-- /.card-header -->
-                  <!-- form start -->
-                  <form>
-                    <div class="card-body">
-                      <div class="form-group">
-                        <label for="serviceName">Service Name</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="serviceName"
-                          placeholder="Enter email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="serviceImage">Service Image</label>
-                        <div class="input-group">
-                          <div class="custom-file">
-                            <input
-                              type="file"
-                              class="custom-file-input"
-                              id="serviceImage"
-                            />
-                            <label class="custom-file-label" for="serviceImage"
-                              >Choose file</label
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="serviceSampleLink"
-                          >Service Sample (Google Drive Link)</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="serviceSampleLink"
-                          placeholder="Password"
-                        />
-                      </div>
-                    </div>
-                    <!-- /.card-body -->
-
-                    <div class="card-footer">
-                      <button type="submit" class="btn btn-primary float-right">
-                        Add Service
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-md-3"></div>
-            </div>
-          </div>
-
-          <!-- Service Table List -->
-          <div class="container">
+          <div class="container-fluid">
+            <!-- Service Table List -->
             <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">DataTable with default features</h3>
+              <div class="card-header shadow-sm">
+                <h3 class="card-title font-weight-bold">Service List</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body table-responsive">
