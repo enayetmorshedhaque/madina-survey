@@ -16,6 +16,12 @@
 
     <!-- Theme style -->
     <link rel="stylesheet" href="assets/css/theme-css/adminlte.min.css" />
+
+    <!-- Summernote CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/summernote/summernote-bs4.min.css"
+    />
   </head>
   <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
@@ -111,7 +117,7 @@
               data-accordion="false"
             >
               <!-- Add icons to the links using the .nav-icon class
-           with font-awesome or any other icon font library -->
+               with font-awesome or any other icon font library -->
               <li class="nav-item">
                 <a href="../admin/dashboard.html" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -148,99 +154,28 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../admin/services.html" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>
-                    Services
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
+                  <p>Services</p>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../admin/services.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Service List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../admin/add-new-service.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Add New Service</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../admin/customers.html" class="nav-link">
                   <i class="nav-icon fas fa-users"></i>
-                  <p>
-                    Customers
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
+                  <p>Customers</p>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../admin/customers.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Customer List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../admin/add-new-customer.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Add New Customer</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../admin/testimonials.html" class="nav-link">
                   <i class="nav-icon fas fa-comments"></i>
-                  <p>
-                    Testimonials
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
+                  <p>Testimonials</p>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../admin/testimonials.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Testimonial List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="../admin/add-new-testimonial.html"
-                      class="nav-link"
-                    >
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Add New Testimonial</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
-              <li class="nav-item menu-open">
-                <a href="#" class="nav-link active">
+              <li class="nav-item">
+                <a href="../admin/blogs.html" class="nav-link active">
                   <i class="nav-icon fas fa-blog"></i>
-                  <p>
-                    Blogs
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
+                  <p>Blogs</p>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../admin/blogs.html" class="nav-link active">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Blog List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../admin/add-new-blog.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Add New Blog</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
@@ -252,15 +187,21 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../admin/social-sites.html" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Social Media</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
                     <a href="../admin/company-profile.html" class="nav-link">
                       <i class="far fa-dot-circle nav-icon"></i>
                       <p>Company Profile</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../admin/branches.html" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Branch List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../admin/social-sites.html" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Social Media</p>
                     </a>
                   </li>
                 </ul>
@@ -279,12 +220,12 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Blank Page</h1>
+                <h1>Add New Blog</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">Blank Page</li>
+                  <li class="breadcrumb-item active">Add New Blog</li>
                 </ol>
               </div>
             </div>
@@ -294,38 +235,87 @@
 
         <!-- Main content -->
         <section class="content">
-          <!-- Default box -->
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Title</h3>
-
-              <div class="card-tools">
-                <button
-                  type="button"
-                  class="btn btn-tool"
-                  data-card-widget="collapse"
-                  title="Collapse"
-                >
-                  <i class="fas fa-minus"></i>
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-tool"
-                  data-card-widget="remove"
-                  title="Remove"
-                >
-                  <i class="fas fa-times"></i>
-                </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-8 mb-3">
+                <div class="card shadow-sm">
+                  <div class="card-header shadow-sm">
+                    <h3 class="card-title font-weight-bold">Blog Details</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="blogTitle">Blog Title</label>
+                      <input
+                        type="text"
+                        id="blogTitle"
+                        class="form-control"
+                        placeholder="Enter blog title"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="blogscription">Blog Description</label>
+                      <textarea id="summernote" id="blogscription"></textarea>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header shadow-sm">
+                    <h3 class="card-title font-weight-bold">Blog Image</h3>
+                  </div>
+                  <div class="card-body">
+                    <img
+                      src="../../assets/images/projects/project-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="card-footer">
+                    <div class="form-group">
+                      <label for="blogImage">Upload Blog Image</label>
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <input
+                            type="file"
+                            class="custom-file-input"
+                            id="blogImage"
+                          />
+                          <label class="custom-file-label" for="blogImage"
+                            >Choose file</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <table class="table">
+                      <tr>
+                        <td style="border-top: 0">
+                          <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary">
+                              Publish This Blog
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr style="cursor: pointer">
+                        <td class="text-center text-muted">Save as draft</td>
+                      </tr>
+                      <tr style="cursor: pointer">
+                        <td class="text-center text-danger font-weight-bold">
+                          Delete this blog
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card-body">
-              Start creating your amazing application!
-            </div>
-            <!-- /.card-body -->
-            <div class="card-footer">Footer</div>
-            <!-- /.card-footer-->
           </div>
-          <!-- /.card -->
         </section>
         <!-- /.content -->
       </div>
@@ -363,5 +353,25 @@
 
     <!-- AdminLTE App -->
     <script src="../admin/assets/js/theme-js/adminlte.min.js"></script>
+
+    <!-- Summernote JS -->
+    <script src="../admin/assets/js/summernote/summernote-bs4.min.js"></script>
+
+    <script>
+      $(function () {
+        // Summernote
+        $("#summernote").summernote({
+          placeholder: "Enter blog description here",
+          tabsize: 2,
+          height: 322,
+        });
+      });
+    </script>
+
+    <script>
+      $(function () {
+        bsCustomFileInput.init();
+      });
+    </script>
   </body>
 </html>

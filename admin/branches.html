@@ -16,6 +16,20 @@
 
     <!-- Theme style -->
     <link rel="stylesheet" href="assets/css/theme-css/adminlte.min.css" />
+
+    <style>
+      .center-text {
+        text-align: center;
+      }
+
+      .custom-control {
+        padding-left: 2.75rem !important;
+      }
+
+      table tbody td {
+        vertical-align: middle !important;
+      }
+    </style>
   </head>
   <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
@@ -181,16 +195,13 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a
-                      href="../admin/company-profile.html"
-                      class="nav-link active"
-                    >
+                    <a href="../admin/company-profile.html" class="nav-link">
                       <i class="far fa-dot-circle nav-icon"></i>
                       <p>Company Profile</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../admin/branches.html" class="nav-link">
+                    <a href="../admin/branches.html" class="nav-link active">
                       <i class="far fa-dot-circle nav-icon"></i>
                       <p>Branch List</p>
                     </a>
@@ -236,142 +247,6 @@
         <section class="content">
           <div class="container-fluid">
             <form>
-              <div class="row">
-                <div class="col-12 mb-3">
-                  <div class="card card-default shadow-sm">
-                    <div class="card-header shadow-sm">
-                      <h3 class="card-title font-weight-bold">
-                        Company Information
-                      </h3>
-                    </div>
-                    <!-- /.card-header -->
-                    <!-- form start -->
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-6">
-                          <div class="form-group">
-                            <label for="companyName">Company Name</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="companyName"
-                              placeholder="Enter company name"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="form-group">
-                            <label for="contactEmail">Contact Email</label>
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="contactEmail"
-                              placeholder="Enter contact email"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="form-group">
-                            <label for="contactNumber">Contact Number</label>
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="contactNumber"
-                              placeholder="Enter contact number"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-6">
-                          <div class="form-group">
-                            <label for="officeAddress"
-                              >Contact/ Office Address</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="officeAddress"
-                              placeholder="Enter office address"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <div class="card shadow-sm mb-3">
-                    <div class="card-header shadow-sm">
-                      <h3 class="card-title font-weight-bold">
-                        Company Header Logo
-                      </h3>
-                    </div>
-                    <div
-                      class="card-body d-flex justify-content-center align-items-center"
-                    >
-                      <img
-                        src="../../assets/images/2.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-                    <div class="card-footer">
-                      <div class="form-group">
-                        <label for="headerLogo">Upload Company Logo</label>
-                        <div class="input-group">
-                          <div class="custom-file">
-                            <input
-                              type="file"
-                              class="custom-file-input"
-                              id="headerLogo"
-                            />
-                            <label class="custom-file-label" for="headerLogo"
-                              >Choose file</label
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <div class="card shadow-sm mb-3">
-                    <div class="card-header shadow-sm">
-                      <h3 class="card-title font-weight-bold">
-                        Company Footer Logo
-                      </h3>
-                    </div>
-                    <div
-                      class="card-body d-flex justify-content-center align-items-center"
-                    >
-                      <img
-                        src="../../assets/images/2.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-                    <div class="card-footer">
-                      <div class="form-group">
-                        <label for="footerLogo">Upload Company Logo</label>
-                        <div class="input-group">
-                          <div class="custom-file">
-                            <input
-                              type="file"
-                              class="custom-file-input"
-                              id="footerLogo"
-                            />
-                            <label class="custom-file-label" for="footerLogo"
-                              >Choose file</label
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="row">
                 <div class="col-12 mb-3">
                   <div class="card card-default shadow-sm">
@@ -445,14 +320,99 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-12 mb-3">
-                  <button type="submit" class="btn btn-primary float-right">
-                    Save Details
-                  </button>
-                </div>
-              </div>
             </form>
+
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card shadow-sm">
+                  <div class="card-header shadow-sm">
+                    <h3 class="card-title font-weight-bold">
+                      Branch Location Table
+                    </h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>District</th>
+                          <th>Email</th>
+                          <th>Contact No</th>
+                          <th>Address</th>
+                          <th class="center-text">Status</th>
+                          <th class="center-text">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Dhaka</td>
+                          <td>madinasurvey@gmail.com</td>
+                          <td>+880-1712-345678</td>
+                          <td>
+                            Advanced Melinda (Level-2), 72, Malibagh, Dhaka -
+                            1219
+                          </td>
+                          <td class="center-text">
+                            <div class="form-group mb-0">
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  id="facebookSwitch"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="facebookSwitch"
+                                ></label>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="center-text">
+                            <button class="btn btn-sm btn-outline-primary">
+                              <i class="fas fa-pencil-alt"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Dhaka</td>
+                          <td>madinasurvey@gmail.com</td>
+                          <td>+880-1712-345678</td>
+                          <td>
+                            Advanced Melinda (Level-2), 72, Malibagh, Dhaka -
+                            1219
+                          </td>
+                          <td class="center-text">
+                            <div class="form-group center-text mb-0">
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  id="facebookSwitch"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="facebookSwitch"
+                                ></label>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="center-text">
+                            <button class="btn btn-sm btn-outline-primary">
+                              <i class="fas fa-pencil-alt"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+            </div>
           </div>
         </section>
         <!-- /.content -->
