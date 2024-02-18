@@ -16,6 +16,16 @@
 
     <!-- Theme style -->
     <link rel="stylesheet" href="assets/css/theme-css/adminlte.min.css" />
+
+    <style>
+      .center-text {
+        text-align: center;
+      }
+
+      table tbody td {
+        vertical-align: middle !important;
+      }
+    </style>
   </head>
   <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
@@ -301,8 +311,7 @@
         <section class="content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-md-6">
+              <div class="col-12 mb-4">
                 <div class="card card-default">
                   <div class="card-header shadow-sm">
                     <h3 class="card-title font-weight-bold">
@@ -314,60 +323,24 @@
                   <form>
                     <div class="card-body">
                       <div class="form-group">
-                        <label for="facebookPageLink">Facebook Page Link</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="facebookPageLink"
-                          placeholder="Enter facebook page link"
-                        />
+                        <label for="socialSites">Select Social Media</label>
+                        <select class="form-control">
+                          <option>Facebook</option>
+                          <option>Instagram</option>
+                          <option>Twitter</option>
+                          <option>Youtube</option>
+                          <option>LinkedIn</option>
+                          <option>WhatsApp</option>
+                          <option>Telegram</option>
+                        </select>
                       </div>
-
                       <div class="form-group">
-                        <label for="instagramAccountLink"
-                          >Instagram Account Link</label
-                        >
+                        <label for="socialMediaLink">Social Media Link</label>
                         <input
                           type="text"
                           class="form-control"
-                          id="instagramAccountLink"
-                          placeholder="Enter instagram account link"
-                        />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="youtubeChannelLink"
-                          >Youtube Channel Link</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="youtubeChannelLink"
-                          placeholder="Enter youtube channel link"
-                        />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="linkedInProfileLink"
-                          >LinkedIn Profile Link</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="linkedInProfileLink"
-                          placeholder="Enter linkedin profile link"
-                        />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="whatsAppMessagingLink"
-                          >Whatsapp Messaging Link</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="whatsAppMessagingLink"
-                          placeholder="Enter whatsapp messaging link"
+                          id="socialMediaLink"
+                          placeholder="Enter social media link"
                         />
                       </div>
                     </div>
@@ -381,13 +354,255 @@
                   </form>
                 </div>
               </div>
-              <div class="col-md-3"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card shadow-sm">
+                  <div class="card-header shadow-sm">
+                    <h3 class="card-title font-weight-bold">
+                      Social Media Account Table
+                    </h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Link</th>
+                          <th class="center-text">Status</th>
+                          <th class="center-text">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Facebook</td>
+                          <td>https://www.facebook.com</td>
+                          <td class="center-text">
+                            <div class="form-group mb-0">
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  id="facebookSwitch"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="facebookSwitch"
+                                ></label>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="center-text">
+                            <button class="btn btn-sm btn-outline-primary">
+                              <i class="fas fa-pencil-alt"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Instagram</td>
+                          <td>https://www.instagram.com</td>
+                          <td class="center-text">
+                            <div class="form-group mb-0">
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  id="instagramSwitch"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="instagramSwitch"
+                                ></label>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="center-text">
+                            <button class="btn btn-sm btn-outline-primary">
+                              <i class="fas fa-pencil-alt"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Twitter</td>
+                          <td>https://www.twitter.com</td>
+                          <td class="center-text">
+                            <div class="form-group mb-0">
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  id="twitterSwitch"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="twitterSwitch"
+                                ></label>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="center-text">
+                            <button class="btn btn-sm btn-outline-primary">
+                              <i class="fas fa-pencil-alt"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Youtube</td>
+                          <td>https://www.youtube.com</td>
+                          <td class="center-text">
+                            <div class="form-group mb-0">
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  id="youtubeSwitch"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="youtubeSwitch"
+                                ></label>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="center-text">
+                            <button class="btn btn-sm btn-outline-primary">
+                              <i class="fas fa-pencil-alt"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Linkedin</td>
+                          <td>https://www.linkedin.com/</td>
+                          <td class="center-text">
+                            <div class="form-group mb-0">
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  id="linkedinSwitch"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="linkedinSwitch"
+                                ></label>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="center-text">
+                            <button class="btn btn-sm btn-outline-primary">
+                              <i class="fas fa-pencil-alt"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>WhatsApp</td>
+                          <td>https://web.whatsapp.com</td>
+                          <td class="center-text">
+                            <div class="form-group mb-0">
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  id="whatsappSwitch"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="whatsappSwitch"
+                                ></label>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="center-text">
+                            <button class="btn btn-sm btn-outline-primary">
+                              <i class="fas fa-pencil-alt"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>Telegram</td>
+                          <td>https://web.telegram.org/</td>
+                          <td class="center-text">
+                            <div class="form-group mb-0">
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  id="telegramSwitch"
+                                  data-toggle="modal"
+                                  data-target="#modal-default"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="telegramSwitch"
+                                ></label>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="center-text">
+                            <button class="btn btn-sm btn-outline-primary">
+                              <i class="fas fa-pencil-alt"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
             </div>
           </div>
         </section>
         <!-- /.content -->
       </div>
       <!-- /.content-wrapper -->
+
+      <!-- Modal -->
+      <div class="modal" id="modal-default" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Default Modal</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>One fine body…</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
 
       <footer class="main-footer text-center">
         <strong
